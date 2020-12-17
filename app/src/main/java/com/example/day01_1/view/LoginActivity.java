@@ -22,12 +22,14 @@ implements MainContract.IMainView {
 
     @Override
     protected void initView() {
+
         editTextTextPersonName=findViewById(R.id.editTextTextPersonName);
         editTextTextPassWord=findViewById(R.id.editTextTextPassword);
     }
 
     @Override
     protected int getLayoutID() {
+
         return R.layout.activity_main;
     }
 
