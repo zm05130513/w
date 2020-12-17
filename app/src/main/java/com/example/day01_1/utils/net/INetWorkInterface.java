@@ -8,4 +8,6 @@ public interface INetWorkInterface {
     public <T> void post(String url,INetCallBack<T> callBack);
     public <T> void post(String url, HashMap<String,String> map, INetCallBack<T> callBack);
 
+    
+
 }
