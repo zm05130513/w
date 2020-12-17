@@ -8,12 +8,13 @@ public class MainModelImp implements MainContract.IMainModel {
     private MainContract.ImainPersenter persenter;
 
     public MainModelImp(MainContract.ImainPersenter persenter) {
+
         this.persenter = persenter;
     }
 
     @Override
-    public<T> void getLonginData(String url, INetCallBack<T> callBack) {
+    public <T> void getLonginData(String url, INetCallBack<T> callBack) {
         persenter.loginResult("登陆成功了");
-        RetrofitUtils.getInstance().get(url,callBack);
+        RetrofitUtils.getInstance().get(url, callBack);
     }
 }
