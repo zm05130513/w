@@ -9,6 +9,7 @@ public class MainContract {
         <T> void getLonginData(String url, INetCallBack<T> callBack);
     }
     public interface ImainPersenter{
+        
         void login(String name,String password);
         void loginResult(String result);
     }
