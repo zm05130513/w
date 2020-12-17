@@ -1,5 +1,6 @@
 package com.example.day01_1.contract;
 
+import com.example.day01_1.base.BaseView;
 import com.example.day01_1.model.UserBean;
 import com.example.day01_1.utils.net.INetCallBack;
 
@@ -11,7 +12,7 @@ public class MainContract {
         void login(String name,String password);
         void loginResult(String result);
     }
-    public interface IMainView{
+    public interface IMainView extends BaseView {
         String getUserName();
         String getPassword();
         void getData(UserBean string);
